@@ -402,6 +402,7 @@
   .btn.off{border:1px dashed rgba(255,255,255,.55);color:rgba(255,255,255,.8);pointer-events:none}
   .essay p{font-size:clamp(15px,3.2vw,16.5px);line-height:2.15;color:var(--ink);margin:0 0 1.3em}
   .essay .sec-title{margin-top:2.6em}
+  [id]{scroll-margin-top:84px}
   .essay .key{font-family:var(--serif);font-size:clamp(17px,3.8vw,21px);color:var(--forest);text-align:center;margin:1.6em 0}
   .essay .src{font-size:13px;color:var(--ink-soft);margin-top:3em;text-align:center}
   .essay .src a{color:var(--forest)}
@@ -517,7 +518,7 @@
   // gentle reveal
   const io=new IntersectionObserver((es)=>{
     es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
-  },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+  },{threshold:0,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
