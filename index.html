@@ -200,9 +200,9 @@
     .mini img{aspect-ratio:4/3;width:100%}
     .mini h4{margin:14px 0 6px;padding-top:12px;border-top:1px solid var(--sumi)}
   }
-  /* 2026-11-25 深山さん：スマホだけ明るく温かく（パソコンは前のまま） */
+  /* 2026-11-25 深山さん：明るく温かく（パソコン・スマホ共通） */
   .closing-ph{display:none}
-  @media (max-width:600px){
+  @media all{
     .ways{background:var(--kinari-2);color:var(--sumi)}
     .ways .label{color:var(--accent)}
     .ways .intro{color:var(--sumi-2)}
@@ -368,6 +368,8 @@
   /* 2026-11-25 深山さん：線と点の装飾はなし */
   .ways .foot{border:none!important;padding:0 12px!important}
   .ways .foot::before{display:none!important;content:none!important}
+  /* 明るいトーンに合わせて「まずは気軽に〜」の文字色 */
+  .ways .foot{color:var(--forest)!important}
 </style>
 </head>
 <body>
